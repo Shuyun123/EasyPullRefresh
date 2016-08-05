@@ -245,21 +245,26 @@ ProgressBarHeaderLoadingLayout，主要参考了[MaterialLoadingProgressBar](htt
 
 ####header样式效果:
 
-<div>
+<div style="background-color:#F7F7F7">
  <ul>
    <li style="list-style-type:none;margin-top:20px;">
       <image style="margin-left:10px" src = "./image/header1.png">
       <image style="margin-left:10px" src = "./image/header2.png">
       <image style="margin-left:10px" src = "./image/header3.png">
+   </li>
+   <br/>
+   <li style="list-style-type:none;margin-top:20px;">
       <image style="margin-left:10px" src = "./image/header4.png">
    </li>
   </ul>
 </div>
 
 
+
+
 ####footer样式效果:
 
-<div>
+<div style="background-color:#F7F7F7">
  <ul>
    <li style="list-style-type:none;margin-top:20px;">
       <image style="margin-left:10px" src = "./image/footer1.png">
