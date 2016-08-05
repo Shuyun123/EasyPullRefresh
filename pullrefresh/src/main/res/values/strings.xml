@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">PullRefresh</string>
+
+    <string name="pushmsg_center_no_more_msg">已经到底啦</string>
+    <string name="pushmsg_center_load_more_ongoing_text">正在加载中</string>
+    <string name="pushmsg_center_pull_down_text">下拉可刷新</string>
+    <string name="pushmsg_center_pull_down_update_time">上次更新:</string>
+    <string name="pushmsg_center_net_work_error_msg">网络错误,点击重试</string>
+
+
+    <item name="recycleview_progress" type="id"/>
+
+    <item name="recycleview_empty" type="id"/>
+
+
+    <!-- 下拉刷新和上拉加载更多的文本 -->
+    <string name="pull_refresh_header_hint_loading">@string/pushmsg_center_load_more_ongoing_text</string>
+    <string name="pull_refresh_header_hint_normal_down">@string/pushmsg_center_pull_down_text</string>
+    <string name="pull_refresh_header_last_time">@string/pushmsg_center_pull_down_update_time</string>
+    <string name="pull_refresh_header_hint_normal_up">上拉可刷新</string>
+    <string name="pull_refresh_header_hint_ready">松开后刷新</string>
+</resources>
