@@ -1,0 +1,63 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile('com.lsjwzh:materialloadingprogressbar:0.5.8-RELEASE')
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.pnikosis:materialish-progress:1.7'
+}
+
+
+ext {
+
+    bintrayRepo = 'maven'  ////bintray上的仓库名，一般为maven
+    bintrayName = 'EasyPullRefresh'//bintray上的项目名
+
+    publishedGroupId = 'net.anumbrella'//JCenter的GroupId
+    artifact = 'easypullrefresh'//JCenter的ArtifactId
+
+    siteUrl = 'https://github.com/Shuyun123/EasyPullRefresh'  //项目的主页
+    gitUrl = 'https://github.com/Shuyun123/EasyPullRefresh.git'   //Git仓库的url
+
+    libraryVersion = '1.0.0'//版本号
+    libraryName = 'EasyPullRefresh'//项目名字，没什么用
+    libraryDescription = 'Simple drop-down refresh'//项目描述，没什么用
+
+    //开发者信息
+    developerId = 'Anumbrella'
+    developerName = 'Anumbrella'
+    developerEmail = 'shuydream623@gmail.com'
+
+    //以上所有信息自行修改，以下不变
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+
+
+
+apply from:'https://raw.githubusercontent.com/Anumbrella/JCenter/master/install.gradle'
+apply from:'https://raw.githubusercontent.com/Anumbrella/JCenter/master/bintray.gradle'
+

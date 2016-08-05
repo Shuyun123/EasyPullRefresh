@@ -1,1 +1,1 @@
-include ':Demo', ':pullrefresh'
+include ':Demo', ':easypullrefresh'

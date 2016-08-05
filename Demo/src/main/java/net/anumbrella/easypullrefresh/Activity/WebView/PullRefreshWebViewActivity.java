@@ -30,6 +30,7 @@ public class PullRefreshWebViewActivity extends AppCompatActivity implements Pul
         setContentView(R.layout.activity_webview);
         mPullWebView = (PullRefreshWebView) findViewById(R.id.PullRefreshWebView);
         mPullWebView.setOnRefreshListener(this);
+        mPullWebView.setPullLoadEnabled(true);
         mPullWebView.setWebViewClient(new WebViewClient() {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
