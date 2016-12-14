@@ -39,7 +39,7 @@ public class DefaultStyleActivity extends AppCompatActivity implements PullRefre
 
     private boolean hasNetWork = true;
 
-    public static final String[] mStrings = {
+    public static  String[] mStrings = {
             "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13"
     };
 
@@ -68,7 +68,7 @@ public class DefaultStyleActivity extends AppCompatActivity implements PullRefre
         });
 
         mPullListView.setOnRefreshListener(this);
-        mPullListView.doAutoPullRefreshing(true, 500);
+        //mPullListView.doAutoPullRefreshing(true, 500);
     }
 
 
@@ -105,6 +105,7 @@ public class DefaultStyleActivity extends AppCompatActivity implements PullRefre
                     mPullListView.setHasMoreData(false);
                     return;
                 }
+
 
                 mListItems.addAll(Arrays.asList(mStrings));
                 mAdapter.notifyDataSetChanged();

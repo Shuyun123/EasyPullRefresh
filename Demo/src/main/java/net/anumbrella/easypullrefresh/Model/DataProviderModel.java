@@ -39,7 +39,6 @@ public class DataProviderModel {
                 "城巷少女", "2016-03-07 16:56:32"));
         datas.add(new ImageDataModel("http://img.woyaogexing.com/2016/08/03/7a55f956628aa5a8!600x600.jpg",
                 "动漫女生图片", "2016-08-03 16:41:54"));
-
         return datas;
     }
 

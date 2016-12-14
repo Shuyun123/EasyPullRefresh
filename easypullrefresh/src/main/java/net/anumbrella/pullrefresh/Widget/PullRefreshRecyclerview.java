@@ -9,6 +9,7 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 
 import net.anumbrella.pullrefresh.Adapter.RecyclerAdapter;
@@ -110,8 +111,6 @@ public class PullRefreshRecyclerview extends PullRefreshBase<RecyclerView> {
     }
 
 
-
-
     /**
      * 设置adapter
      *
@@ -129,6 +128,8 @@ public class PullRefreshRecyclerview extends PullRefreshBase<RecyclerView> {
         if (color != -1) {
             mLoadMoreFooterLayout.setBackgroundResource(color);
         }
+        adapter.registerAdapterDataObserver(new DataObserver(mRecycler, this));
+
     }
 
 
@@ -448,11 +449,15 @@ public class PullRefreshRecyclerview extends PullRefreshBase<RecyclerView> {
         if (errorView != null) {
             errorView.setVisibility(GONE);
         }
+        RecyclerAdapter adapter = (RecyclerAdapter) mRecycler.getAdapter();
+        adapter.hideAllHeaderAndFooterView();
     }
 
     private void displayRefreshViews() {
         if (mRefreshableViewWrapper.getChildCount() > 0) {
             mRecycler.setVisibility(VISIBLE);
+            RecyclerAdapter adapter = (RecyclerAdapter) mRecycler.getAdapter();
+            adapter.displayAllHeaderAndFooterView();
         }
 
     }
@@ -461,12 +466,16 @@ public class PullRefreshRecyclerview extends PullRefreshBase<RecyclerView> {
     private void showRecycleView() {
         hideAllViews();
         displayRefreshViews();
+
+
     }
 
     private void showEmpty() {
         if (emptyView != null) {
             hideAllViews();
-            displayRefreshViews();
+            if (mRefreshableViewWrapper.getChildCount() > 0) {
+                mRecycler.setVisibility(VISIBLE);
+            }
             emptyView.setVisibility(VISIBLE);
         }
     }

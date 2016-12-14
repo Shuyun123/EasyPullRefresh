@@ -146,11 +146,11 @@ public abstract class RecyclerAdapter<D> extends RecyclerView.Adapter<BaseViewHo
     }
 
 
-    public View getFooterView(boolean boottom) {
-        if (boottom) {
+    public View getFooterView(boolean bottom) {
+        if (bottom) {
             if (getFooterViewsCount() > 0) {
                 return mFooterViews.get(getFooterViewsCount() - 1);
-            }else{
+            } else {
                 return null;
             }
         }
@@ -179,13 +179,40 @@ public abstract class RecyclerAdapter<D> extends RecyclerView.Adapter<BaseViewHo
         return getHeaderViewsCount() > 0 && index < getHeaderViewsCount() ? mHeaderViews.get(index) : null;
     }
 
+
+    /**
+     * 隐藏头部和底部的所有视图
+     */
+    public void hideAllHeaderAndFooterView() {
+        for (View view : mHeaderViews) {
+            view.setVisibility(View.INVISIBLE);
+        }
+
+        for (View view : mFooterViews) {
+            view.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    /**
+     * 显示头部和底部的所有视图
+     */
+    public void displayAllHeaderAndFooterView() {
+        for (View view : mHeaderViews) {
+            view.setVisibility(View.VISIBLE);
+        }
+
+        for (View view : mFooterViews) {
+            view.setVisibility(View.VISIBLE);
+        }
+    }
+
+
+
     public void removeHeaderView(View view) {
         int position = mHeaderViews.indexOf(view);
         mHeaderViews.remove(view);
         this.notifyItemRemoved(position);
     }
-
-
 
 
     public void removeFooterView(View view) {

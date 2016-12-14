@@ -3,6 +3,7 @@ package net.anumbrella.pullrefresh.Widget;
 import android.content.Context;
 import android.database.DataSetObserver;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -123,6 +124,9 @@ public class PullRefreshListView extends PullRefreshBase<ListView> implements Ab
     public void setAdapter(Adapter adapter) {
         mListView.setAdapter((ListAdapter) adapter);
         adapter.registerDataSetObserver(new DataObserver(mListView, this));
+        if (adapter.getCount() == 0) {
+            showEmpty();
+        }
     }
 
 
@@ -165,7 +169,7 @@ public class PullRefreshListView extends PullRefreshBase<ListView> implements Ab
         }
 
         private void update() {
-            int count;
+            int count ;
             if (mListView != null) {
                 count = mListView.getAdapter().getCount();
                 if (count > 0) {

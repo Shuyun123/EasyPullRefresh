@@ -38,7 +38,6 @@ public class IndicatorStyleActivity extends AppCompatActivity implements PullRef
 
     private LinkedList<String> mListItems;
 
-    private boolean hasNetWork = true;
 
     public static final String[] mStrings = {
             "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13"
@@ -55,7 +54,7 @@ public class IndicatorStyleActivity extends AppCompatActivity implements PullRef
         //滑动到底部自动加载
         mPullListView.setScrollLoadEnabled(true);
         mListItems = new LinkedList<String>();
-         mListItems.addAll(Arrays.asList(new String[]{"1","2","3","4","5"}));
+        mListItems.addAll(Arrays.asList(new String[]{"1","2","3","4","5"}));
         mAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, mListItems);
         mListView = mPullListView.getRefreshableView();
 
