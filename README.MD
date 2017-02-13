@@ -4,7 +4,7 @@
 
 EasyPullRefresh是一个实现了下拉刷新/上拉刷新/加载更多的android组件。现支持ListView、RecyclerView下拉刷新/加载更多/上拉刷新功能。WebView支持下拉刷新。同时支持自定义刷新样式，RecyclerView中的adapter和ViewHolder分离。
 
-详细介绍可以看我的博客[EasyPullRefresh](https://www.anumbrella.net/Blog/2016/08/05/android%E7%AE%80%E6%98%93%E4%B8%8B%E6%8B%89%E6%A1%86%E6%9E%B6%E5%AE%9E%E7%8E%B0/)
+详细介绍可以看我的博客[EasyPullRefresh](http://blog.csdn.net/anumbrella/article/details/55046686)
 
 
 
