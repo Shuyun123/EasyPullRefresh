@@ -1,13 +1,13 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.3"
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 23
-        versionCode 1
+        targetSdkVersion 25
+        versionCode 2
         versionName "1.0"
     }
     buildTypes {
@@ -23,7 +23,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile('com.lsjwzh:materialloadingprogressbar:0.5.8-RELEASE')
     compile 'com.nineoldandroids:library:2.4.0'
-    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.android.support:recyclerview-v7:25.0.0'
     compile 'com.pnikosis:materialish-progress:1.7'
 }
 
@@ -39,7 +39,7 @@ ext {
     siteUrl = 'https://github.com/Shuyun123/EasyPullRefresh'  //项目的主页
     gitUrl = 'https://github.com/Shuyun123/EasyPullRefresh.git'   //Git仓库的url
 
-    libraryVersion = '1.0.0'//版本号
+    libraryVersion = '1.0.1'//版本号
     libraryName = 'EasyPullRefresh'//项目名字，没什么用
     libraryDescription = 'Simple drop-down refresh'//项目描述，没什么用
 

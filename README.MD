@@ -1,5 +1,7 @@
 # EasyPullRefresh
 
+[![Platform](https://img.shields.io/badge/platform-android-green.svg)](http://developer.android.com/index.html)
+
 ##简介
 
 EasyPullRefresh是一个实现了下拉刷新/上拉刷新/加载更多的android组件。现支持ListView、RecyclerView下拉刷新/加载更多/上拉刷新功能。WebView支持下拉刷新。同时支持自定义刷新样式，RecyclerView中的adapter和ViewHolder分离。
@@ -20,13 +22,13 @@ EasyPullRefresh是一个实现了下拉刷新/上拉刷新/加载更多的androi
 
 
 ```groovy
-compile 'net.anumbrella:easypullrefresh:1.0.0'
+compile 'net.anumbrella:easypullrefresh:1.0.1'
 ```
 
 
 
 ##示例
-![demo](./image/EasyPullRefresh.gif)
+![demo](https://github.com/Shuyun123/EasyPullRefresh/raw/master/art/EasyPullRefresh.gif)
 
 
 
@@ -214,7 +216,7 @@ IndicatorViewHeaderLoadingLayout、IndicatorViewFooterLoadingLayout，主要参�
 
 主要样式包括:
 
-![AVLoadingIndicatorView](./image/AVLoadingIndicatorView.gif)
+![AVLoadingIndicatorView](https://github.com/Shuyun123/EasyPullRefresh/art/AVLoadingIndicatorView.gif)
 
 row1：BallPulse、BallGridPulse、BallClipRotate、BallClipRotatePulse
 
@@ -248,13 +250,13 @@ ProgressBarHeaderLoadingLayout，主要参考了[MaterialLoadingProgressBar](htt
 <div style="background-color:#F7F7F7">
  <ul>
    <li style="list-style-type:none;margin-top:20px;">
-      <image style="margin-left:10px" src = "./image/header1.png">
-      <image style="margin-left:10px" src = "./image/header2.png">
-      <image style="margin-left:10px" src = "./image/header3.png">
+      <image style="margin-left:10px" src = "./art/header1.png">
+      <image style="margin-left:10px" src = "./art/header2.png">
+      <image style="margin-left:10px" src = "./art/header3.png">
    </li>
    <br/>
    <li style="list-style-type:none;margin-top:20px;">
-      <image style="margin-left:10px" src = "./image/header4.png">
+      <image style="margin-left:10px" src = "./art/header4.png">
    </li>
   </ul>
 </div>
@@ -267,8 +269,8 @@ ProgressBarHeaderLoadingLayout，主要参考了[MaterialLoadingProgressBar](htt
 <div style="background-color:#F7F7F7">
  <ul>
    <li style="list-style-type:none;margin-top:20px;">
-      <image style="margin-left:10px" src = "./image/footer1.png">
-      <image style="margin-left:10px" src = "./image/footer2.png">
+      <image style="margin-left:10px" src = "./art/footer1.png">
+      <image style="margin-left:10px" src = "./art/footer2.png">
       
    </li>
    </ul>
@@ -293,7 +295,7 @@ ProgressBarHeaderLoadingLayout，主要参考了[MaterialLoadingProgressBar](htt
 ##License:
 
 ```bash
-               Copyright 2015 Anumbrella
+               Copyright 2016 Anumbrella
                               
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

@@ -75,14 +75,7 @@ public class PullRefreshWebViewActivity extends AppCompatActivity implements Pul
 
     private void loadUrl() {
 
-        String[] sUrls = new String[]{
-                "http://www.csdn.net",
-                "http://www.baidu.com"
-        };
-        int length = sUrls.length;
-        Random rand = new Random();
-        int mIndex = rand.nextInt(length);
-        String url = sUrls[mIndex];
+        String url = "http://www.jianshu.com/";
         mPullWebView.loadUrl(url);
     }
 }
