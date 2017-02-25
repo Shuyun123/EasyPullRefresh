@@ -216,7 +216,7 @@ IndicatorViewHeaderLoadingLayout、IndicatorViewFooterLoadingLayout，主要参�
 
 主要样式包括:
 
-![AVLoadingIndicatorView](https://github.com/Shuyun123/EasyPullRefresh/art/AVLoadingIndicatorView.gif)
+![AVLoadingIndicatorView](https://raw.githubusercontent.com/Shuyun123/EasyPullRefresh/master/art/AVLoadingIndicatorView.gif)
 
 row1：BallPulse、BallGridPulse、BallClipRotate、BallClipRotatePulse
 
