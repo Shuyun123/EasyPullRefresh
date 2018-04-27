@@ -2,7 +2,7 @@
 
 [![Platform](https://img.shields.io/badge/platform-android-green.svg)](http://developer.android.com/index.html)
 
-##简介
+## 简介
 
 EasyPullRefresh是一个实现了下拉刷新/上拉刷新/加载更多的android组件。现支持ListView、RecyclerView下拉刷新/加载更多/上拉刷新功能。WebView支持下拉刷新。同时支持自定义刷新样式，RecyclerView中的adapter和ViewHolder分离。
 
@@ -10,7 +10,7 @@ EasyPullRefresh是一个实现了下拉刷新/上拉刷新/加载更多的androi
 
 
 
-##主要功能
+## 主要功能
 
 1.下拉刷新、滑动到底部自动加载下页数据、上拉刷新；
 2.可以方便添加自定义的Header和Footer布局视图；
@@ -18,7 +18,7 @@ EasyPullRefresh是一个实现了下拉刷新/上拉刷新/加载更多的androi
 4.具备item点击和长按事件，加载显示progress、错误显示ErrorView、空数据显示EmptyView。
 
 
-##依赖
+## 依赖
 
 
 ```groovy
@@ -27,7 +27,7 @@ compile 'net.anumbrella:easypullrefresh:1.0.1'
 
 
 
-##示例
+## 示例
 ![demo](https://github.com/Shuyun123/EasyPullRefresh/raw/master/art/EasyPullRefresh.gif)
 
 
@@ -245,7 +245,7 @@ row7：TriangleSkewSpin、Pacman、BallGridBeat、SemiCircleSpin
 ProgressBarHeaderLoadingLayout，主要参考了[MaterialLoadingProgressBar](https://github.com/lsjwzh/MaterialLoadingProgressBar)同样支持自定义。
 
 
-####header样式效果:
+#### header样式效果:
 
 <div style="background-color:#F7F7F7">
  <ul>
@@ -264,7 +264,7 @@ ProgressBarHeaderLoadingLayout，主要参考了[MaterialLoadingProgressBar](htt
 
 
 
-####footer样式效果:
+#### footer样式效果:
 
 <div style="background-color:#F7F7F7">
  <ul>
@@ -277,7 +277,7 @@ ProgressBarHeaderLoadingLayout，主要参考了[MaterialLoadingProgressBar](htt
 </div>
 
 
-##感谢:
+## 感谢:
 实现的这个下拉刷新的框架，并不是自己的原创，在完成过程中是参考了很多开源的框架，并把自己认为比较好的东西借鉴了过来，从而形成我的东西。
 
 * [LRecyclerView](https://github.com/jdsjlzx/LRecyclerView)
@@ -289,24 +289,26 @@ ProgressBarHeaderLoadingLayout，主要参考了[MaterialLoadingProgressBar](htt
 
 
 
-###具体用法，请看demo。
+### 具体用法，请看demo。
 
 
-##License:
+## License
 
-```bash
-               Copyright 2016 Anumbrella
-                              
+The Apache Software License, Version 2.0
+
+Copyright  [2016]  [Anumbrella]
+
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
-You may obtain a copy of the License at 
-        http://www.apache.org/licenses/LICENSE-2.0
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
- 
  
  
  
